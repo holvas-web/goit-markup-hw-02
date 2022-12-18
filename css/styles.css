@@ -15,16 +15,12 @@ body {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.topline-nav {
-    
-}
-
 .topline-logo {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-
+    text-decoration: none;
     position: absolute;
     width: 115px;
     height: 24px;
@@ -32,3 +28,185 @@ body {
     top: 24px;
 }
 
+.logo-web {
+    width: 44px;
+    height: 24px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #4D5AE5;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.logo-studio {
+    width: 71px;
+    height: 24px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px; 
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #2E2F42;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.topline-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    
+    position: absolute;
+    width: 261px;
+    height: 24px;
+    left: 348px;
+    top: 7px;
+    list-style-type: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.topline-menu a[href="https://studio.html"] {
+    width: 48px;
+    height: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color: #2E2F42;
+    letter-spacing: 0.02em;
+}
+
+.topline-menu a[href="https://portfolio.html"]{
+    width: 66px;
+    height: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    color: #2E2F42;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.topline-menu a[href="https://contacts.html"]{
+    width: 67px;
+    height: 24px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    color: #2E2F42;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.topline-contacts {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    list-style-type: none;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.topline-contacts a[href="mailto:info@devstudio.com"] {
+    position: absolute;
+    width: 153px;
+    height: 24px;
+    left: 940px;
+    top: 24px;
+    text-decoration: none;
+}
+
+.topline-contacts a[href="tel:+110001111111"] {
+    position: absolute;
+    width: 151px;
+    height: 24px;
+    left: 1133px;
+    top: 24px;
+    text-decoration: none;
+}
+
+.services {
+    position: absolute;
+    width: 1440px;
+    height: 603px;
+    left: 0px;
+    top: 72px;
+    background: #2E2F42;
+}
+
+.services h1 {
+    position: absolute;
+    width: 492px;
+    height: 120px;
+    left: 474px;
+    top: 264px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.services-order {
+    width: 106px;
+    height: 19px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.services-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 30px;
+    gap: 10px;
+    position: absolute;
+    width: 170px;
+    height: 51px;
+    left: 635px;
+    top: 432px;
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
