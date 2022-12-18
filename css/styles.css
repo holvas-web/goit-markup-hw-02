@@ -5,57 +5,30 @@ body {
     background: #FFFFFF;
 }
 
-.header-topline {
+.topline {
     position: absolute;
     width: 1440px;
     height: 72px;
     left: 0px;
     top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.order-service {
-    position: absolute;
-    width: 1440px;
-    height: 603px;
-    left: 0px;
-    top: 72px;
-    background: #2E2F42;
+.topline-nav {
+    
 }
 
-.button-order {
+.topline-logo {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 16px 32px;
-    gap: 10px;
+    padding: 0px;
+
     position: absolute;
-    width: 170px;
-    height: 51px;
-    left: 635px;
-    top: 432px;
-    background: #4D5AE5;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    width: 115px;
+    height: 24px;
+    left: 156px;
+    top: 24px;
 }
 
-.h1-order {
-    position: absolute;
-    width: 492px;
-    height: 120px;
-    left: 474px;
-    top: 264px;
-
-    /* Header 1 */
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 56px;
-    line-height: 60px;
-    /* or 107% */
-
-    text-align: center;
-    letter-spacing: 0.02em;
-
-    color: #FFFFFF;
-}
