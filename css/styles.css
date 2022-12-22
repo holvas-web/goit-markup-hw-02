@@ -92,7 +92,7 @@ body {
     line-height: 24px;
 }
 
-.topline-menu a[href="https://studio.html"] {
+.topline-menu a[href="#"] {
     width: 48px;
     height: 24px;
     flex: none;
@@ -100,29 +100,20 @@ body {
     flex-grow: 0;
     color: #2E2F42;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
-.topline-menu a[href="https://portfolio.html"]{
+/* .topline-menu a[href="#"]{
     width: 66px;
     height: 24px;
-    flex: none;
     order: 1;
-    flex-grow: 0;
-    color: #2E2F42;
-    letter-spacing: 0.02em;
-    text-decoration: none;
 }
 
-.topline-menu a[href="https://contacts.html"]{
+.topline-menu a[href="#"]{
     width: 67px;
     height: 24px;
-    flex: none;
     order: 2;
-    flex-grow: 0;
-    color: #2E2F42;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-}
+} */
 
 .topline-contacts {
     font-family: 'Roboto';
