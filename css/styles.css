@@ -19,7 +19,7 @@ body{
 .logo {
     width: 71px;
     height: 24px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
@@ -30,9 +30,5 @@ body{
 .logo-web {
     color: #4D5AE5;
     width: 44px;
-}
-.filters {
-
-}
 
 /*--------Styles for portfolio.html--------*/
