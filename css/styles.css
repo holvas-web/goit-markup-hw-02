@@ -1,4 +1,11 @@
 /*Dropped styles*/
+:root {
+    --link-hover: #4D5AE5;
+    --link-focus: #434455;
+    --button: #4D5AE5;
+    --link-current: #4D5AE5;
+}
+
 .list {
     list-style: none;
 }
@@ -17,18 +24,90 @@ body{
 
 /*Header*/
 .logo {
-    width: 71px;
-    height: 24px;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: 24px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
 .logo-web {
     color: #4D5AE5;
-    width: 44px;
+}
+.top-menu .link:hover, .top-contacts .link:hover,
+.top-menu .link:focus, .top-contacts .link:focus {
+    color: var(--link-hover);
+}
+.top-menu {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+.top-menu .link.current {
+color: var(--link-current);
+}
+.top-contacts a {
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/*Services*/
+.services {
+    background-color: #2E2F42;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 56px;
+    letter-spacing: 0.02em;
+}
+.services-order {
+
+}
+.services-button {
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    font-family: inherit;
+}
+.services-button:hover, .services-button:focus {
+    background: #4D5AE5;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 4px;
+}
+
+.features h3, 
+.services h1, 
+.offer h2, 
+.ourteam h2 {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+    
+/*What are we do*/
+.offer h2 {
+    font-size: 36px;
+    line-height: 40px;
+}
+.offer-list img {
+    border: 1px solid #E7E9FC;
+}
+
+/*Our team*/
+.ourteam
 
 /*--------Styles for portfolio.html--------*/
