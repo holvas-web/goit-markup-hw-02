@@ -1,19 +1,20 @@
 /*Dropped styles*/
 :root {
-  --link: #2e2f42;
+  --body-color: #2e2f42;
   --link-active: #404bbf;
-  --link-hover: #404bbf;
-  --link-focus: #434455;
-  --link-contacts: #434455;
+  --nav-hover: #404bbf;
+  --nav-focus: #434455;
+  --top-contacts: #434455;
   --for-text: #434455;
   --services-btn: #4d5ae5;
-  --link-current: #4d5ae5;
-  --link-web: #4d5ae5;
+  --current: #4d5ae5;
+  --logo-web: #4d5ae5;
   --color-btn: #ffffff;
   --hover-btn: #404bbf;
   --color-services: #ffffff;
+  --bg-services: #2e2f42;
   --for-h3: #2e2f42;
-  --color-h2: #2e2f42;
+  --color-titel: #2e2f42;
   --ourteam-bg: #f4f4fd;
   --cards-bg: #ffffff;
   --footer-bg: #2e2f42;
@@ -39,13 +40,9 @@
 
 /*--------Styles for index.html--------*/
 body {
-  background-color: #ffffff;
-  color: var(--link);
+  color: var(--body-color);
   font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
   letter-spacing: 0.02em;
 }
 
@@ -57,33 +54,32 @@ body {
   font-size: 18px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  align-items: center;
 }
 .logo-web {
-  color: var(--link-web);
+  color: var(--logo-web);
 }
 .top-menu .link:hover,
 .top-contacts .link:hover {
-  color: var(--link-hover);
+  color: var(--nav-hover);
 }
 .top-menu .link:focus,
 .top-contacts .link:focus {
-  color: var(--link-focus);
+  color: var(--nav-focus);
 }
 .top-menu {
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5em;
   letter-spacing: 0.02em;
 }
-.top-menu .link.current {
-  color: var(--link-current);
+.current {
+  color: var(--current);
 }
 .top-contacts a {
   letter-spacing: 0.02em;
-  color: var(--link-contacts);
+  color: var(--top-contacts);
+  font-style: normal;
 }
 
 .visually-hidden {
@@ -101,12 +97,14 @@ body {
 
 /*Services*/
 .services {
-  background-color: #2e2f42;
+  background-color: var(--bg-services);
+  text-align: center;
+}
+.services-titel {
   color: var(--color-services);
   font-weight: 700;
   font-size: 56px;
-  line-height: 60px;
-  text-align: center;
+  line-height: 1.07em;
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
@@ -119,8 +117,9 @@ body {
   color: var(--color-btn);
   padding: 16px 32px;
   font-size: 16px;
-  line-height: 24px;
-  align-items: center;
+  font-family: inherit;
+  line-height: 1.5em;
+  text-align: center;
 }
 .services-button:hover,
 .services-button:focus {
@@ -132,25 +131,25 @@ body {
 .features {
   color: var(--for-text);
 }
-.features-h3,
+.features-titel,
 .cards > h3,
 .gallery-list h2 {
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.02em;
-  color: var (--for-h3);
+  line-height: 1.2em;
+  color: var(--for-h3);
 }
 
 /*What are we do*/
 .offer > h2,
 .ourteam > h2 {
-  font-weight: 700;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.11em;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--color-h2);
+  color: var(--color-titel);
 }
 .offer-list img {
   border: 1px solid #e7e9fc;
@@ -165,7 +164,6 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  align-items: center;
   padding: 0px 0px 32px;
 }
 .cards > h3 {
@@ -185,7 +183,7 @@ body {
 }
 .footer > p {
   color: var(--logo-footer);
-  line-height: 21px;
+  line-height: 1.31em;
 }
 
 /*--------Styles for portfolio--------*/
@@ -199,14 +197,12 @@ body {
   font-weight: 500;
   color: var(--filters-text);
   letter-spacing: 0.04em;
-  align-items: center;
   text-align: center;
   padding: 12px 24px;
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5em;
 }
 .filters-btn:hover {
   background-color: var(--filters-bg-hover);
@@ -218,7 +214,7 @@ body {
 
 .gallery-list .list-item {
   background: var(--listitem-bg);
-  border: 1px solid var(--listitem-br);
+  /* border: 1px solid var(--listitem-br); */
 }
 .gallery-list p {
   color: var(--for-text);
