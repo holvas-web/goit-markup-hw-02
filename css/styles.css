@@ -1,142 +1,219 @@
 /*Dropped styles*/
 :root {
-    --link-hover: #4D5AE5;
-    --link-focus: #434455;
-    --button: #4D5AE5;
-    --link-current: #4D5AE5;
+  --link: #2e2f42;
+  --link-active: #404bbf;
+  --link-hover: #404bbf;
+  --link-focus: #434455;
+  --link-contacts: #434455;
+  --for-text: #434455;
+  --services-btn: #4d5ae5;
+  --link-current: #4d5ae5;
+  --link-web: #4d5ae5;
+  --color-btn: #ffffff;
+  --hover-btn: #404bbf;
+  --color-services: #ffffff;
+  --for-h3: #2e2f42;
+  --color-h2: #2e2f42;
+  --ourteam-bg: #f4f4fd;
+  --cards-bg: #ffffff;
+  --footer-bg: #2e2f42;
+  --footerlogo: #f4f4fd;
+  --logo-footer: #e7e9fc;
+  --filters-bg: #f4f4fd;
+  --filters-bg-hover: #404bbf;
+  --filters-br: #e7e9fc;
+  --filters-text: #4d5ae5;
+  --filters-text-hover: #ffffff;
+  --label: #404bbf;
+  --listitem-br: #e7e9fc;
+  --listitem-bg: #ffffff;
 }
 
 .list {
-    list-style: none;
+  list-style: none;
 }
 .link {
-    text-decoration: none;
+  text-decoration: none;
+  color: var(--link);
 }
 
 /*--------Styles for index.html--------*/
-body{
-    width: 1440px;
-    height: 2593px;
-    background-color: #FFFFFF;
-    color: #2E2F42;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.02em;
+body {
+  background-color: #ffffff;
+  color: var(--link);
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
 }
 
 /*Header*/
-.top-logo, .footer-logo {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+.top-logo,
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  align-items: center;
 }
 .logo-web {
-    color: #4D5AE5;
+  color: var(--link-web);
 }
-.top-menu .link:hover, .top-contacts .link:hover,
-.top-menu .link:focus, .top-contacts .link:focus {
-    color: var(--link-hover);
+.top-menu .link:hover,
+.top-contacts .link:hover {
+  color: var(--link-hover);
+}
+.top-menu .link:focus,
+.top-contacts .link:focus {
+  color: var(--link-focus);
 }
 .top-menu {
-    font-weight: 600;
-    letter-spacing: 0.02em;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
 }
 .top-menu .link.current {
-color: var(--link-current);
+  color: var(--link-current);
 }
 .top-contacts a {
-    letter-spacing: 0.02em;
-    color: #434455;
+  letter-spacing: 0.02em;
+  color: var(--link-contacts);
 }
 
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 /*Services*/
 .services {
-    background-color: #2E2F42;
-    color: #FFFFFF;
-    font-weight: 600;
-    font-size: 56px;
-    letter-spacing: 0.02em;
+  background-color: #2e2f42;
+  color: var(--color-services);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 .services-button {
-    background: #4D5AE5;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    font-weight: 600;
-    line-height: 19px;
-    letter-spacing: 0.04em;
-    color: #FFFFFF;
-    font-family: inherit;
+  background-color: var(--services-btn);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--color-btn);
+  padding: 16px 32px;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
 }
-.services-button:hover, .services-button:focus {
-    background: #4D5AE5;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 4px;
+.services-button:hover,
+.services-button:focus {
+  background-color: var(--hover-btn);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  cursor: pointer;
+}
+.features {
+  color: var(--for-text);
+}
+.features-h3,
+.cards > h3,
+.gallery-list h2 {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: var (--for-h3);
 }
 
-.features h3, 
-.services h1, 
-.offer h2, 
-.ourteam h2 {
-    font-size: 20px;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-}
-    
 /*What are we do*/
-.offer h2 {
-    font-size: 36px;
-    line-height: 40px;
+.offer > h2,
+.ourteam > h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--color-h2);
 }
 .offer-list img {
-    border: 1px solid #E7E9FC;
+  border: 1px solid #e7e9fc;
 }
 
 /*Our team*/
 .ourteam {
-    background-color: #F4F4FD;
+  background-color: var(--ourteam-bg);
 }
 .cards {
-    background-color: #FFFFFF;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
-    margin: 0px 0px 24px;
+  background-color: var(--cards-bg);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  align-items: center;
+  padding: 0px 0px 32px;
+}
+.cards > h3 {
+  text-align: center;
+}
+.cards > p {
+  text-align: center;
+  color: var(--for-text);
 }
 
 /*Footer*/
 .footer {
-    background-color: #2E2F42;;
+  background-color: var(--footer-bg);
 }
-.footer-logo  {
-    color: #F4F4FD;
+.footer-logo {
+  color: var(--footerlogo);
 }
-.footer>p {
-    color: #E7E9FC;
+.footer > p {
+  color: var(--logo-footer);
+  line-height: 21px;
 }
 
 /*--------Styles for portfolio--------*/
+.filters-list {
+  /* padding: 0; */
+}
 .filters-btn {
-    background-color: #F4F4FD;
-    border: 1px solid #E7E9FC;
-    border-radius: 4px;
-    font-weight: 600;
-    color: #4D5AE5;
-    letter-spacing: 0.04em;
+  background-color: var(--filters-bg);
+  border: 1px solid var(--filters-br);
+  border-radius: 4px;
+  font-weight: 500;
+  color: var(--filters-text);
+  letter-spacing: 0.04em;
+  align-items: center;
+  text-align: center;
+  padding: 12px 24px;
 }
 .filters-btn:hover {
-    background-color: #4D5AE5;
-    color: #FFFFFF;
+  background-color: var(--filters-bg-hover);
+  color: var(--filters-text-hover);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-list .list-item {
+  background: var(--listitem-bg);
+  border: 1px solid var(--listitem-br);
+}
+.gallery-list p {
+  color: var(--for-text);
 }
