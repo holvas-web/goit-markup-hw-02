@@ -35,7 +35,7 @@
 }
 .link {
   text-decoration: none;
-  color: var(--link);
+  color: var(--body-color);
 }
 
 /*--------Styles for index.html--------*/
