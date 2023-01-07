@@ -54,9 +54,11 @@ body {
   font-size: 18px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  line-height: 1.34;
 }
 .logo-web {
   color: var(--logo-web);
+  line-height: 1.34;
 }
 .top-menu .link:hover,
 .top-contacts .link:hover {
@@ -67,10 +69,10 @@ body {
   color: var(--nav-focus);
 }
 .top-menu {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5em;
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
 .current {
@@ -80,6 +82,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--top-contacts);
   font-style: normal;
+  line-height: 1.5;
 }
 
 .visually-hidden {
@@ -104,7 +107,7 @@ body {
   color: var(--color-services);
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.07em;
+  line-height: 1.07;
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
@@ -118,7 +121,7 @@ body {
   padding: 16px 32px;
   font-size: 16px;
   font-family: inherit;
-  line-height: 1.5em;
+  line-height: 1.5;
   text-align: center;
 }
 .services-button:hover,
@@ -137,15 +140,17 @@ body {
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.02em;
-  line-height: 1.2em;
+  line-height: 1.2;
   color: var(--for-h3);
 }
-
+.features-list {
+  line-height: 1.5;
+}
 /*What are we do*/
 .offer > h2,
 .ourteam > h2 {
   font-size: 36px;
-  line-height: 1.11em;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -168,9 +173,11 @@ body {
 }
 .cards > h3 {
   text-align: center;
+  line-height: 0.04;
 }
 .cards > p {
   text-align: center;
+  line-height: 1.5;
   color: var(--for-text);
 }
 
@@ -183,13 +190,10 @@ body {
 }
 .footer > p {
   color: var(--logo-footer);
-  line-height: 1.31em;
+  line-height: 1.31;
 }
 
 /*--------Styles for portfolio--------*/
-.filters-list {
-  /* padding: 0; */
-}
 .filters-btn {
   background-color: var(--filters-bg);
   border: 1px solid var(--filters-br);
@@ -199,10 +203,9 @@ body {
   letter-spacing: 0.04em;
   text-align: center;
   padding: 12px 24px;
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: inherit;
   font-size: 16px;
-  line-height: 1.5em;
+  line-height: 1.5;
 }
 .filters-btn:hover {
   background-color: var(--filters-bg-hover);
@@ -213,9 +216,10 @@ body {
 }
 
 .gallery-list .list-item {
-  background: var(--listitem-bg);
-  /* border: 1px solid var(--listitem-br); */
+  /*background: var(--listitem-bg);
+  border: 1px solid var(--listitem-br); */
 }
 .gallery-list p {
   color: var(--for-text);
+  line-height: 1.5;
 }
